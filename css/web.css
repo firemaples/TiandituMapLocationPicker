@@ -1,0 +1,48 @@
+/*Global*/
+.form-control, .form-control:focus, .form-control.focus {
+    padding: 0 10px !important;
+}
+
+label.control-label {
+    margin-right: 10px;
+}
+
+.dropdownjs:after {
+    content: "";
+}
+
+.divInline{
+    display:inline;
+}
+
+.hidden{
+    display:none;
+}
+
+/*Map*/
+#mapDiv{
+    position:absolute !important;
+    width:70%; 
+    height:100%;
+}
+
+/*Right Div*/
+#rightDiv{
+    position:relative;
+    float:right;
+    /*left:1020px;*/
+    height:100%;
+    width:30%;
+}
+
+#dd_mapType{
+    display: inline-block;
+}
+
+textarea.form-control {
+    border: 1px solid #d2eceb;
+}
+
+textarea.form-control:focus, textarea.form-control.focus {
+    border: 1px solid #009688;
+}

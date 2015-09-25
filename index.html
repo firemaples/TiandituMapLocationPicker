@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/> 
+    <meta name="keywords" content="天地图"/> 
+    <title>天地圖-地圖座標選擇器</title> 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design for Bootstrap https://github.com/FezVrasta/bootstrap-material-design -->
+    <link href="css/roboto.min.css" rel="stylesheet">
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/ripples.min.css" rel="stylesheet">
+    <!--<link href="css/jquery.dropdown.css" rel="stylesheet">-->
+    <link href="css/web.css" rel="stylesheet">
+</head> 
+<body> 
+	<div id="mapDiv"></div> 
+	<div id="rightDiv" class="form-inline well bs-component"> 
+		<a id="openGoogleMapText" herf="#" target="_blank">
+		    開啟GoogleMap
+		    <i id="bt_openGoogleApiConsole" class="mdi-action-open-in-new"></i>
+		</a>
+		
+        <div>
+    		<label class="control-label">中心位置</label>
+    		<input type="text" class="form-control" id="centerStr" />
+    		<input type="button" class="btn btn-primary" id="changeCenter" value="更換中心"/>
+        </div>
+        <div class="form-inline">
+    		<label class="control-label">地圖樣式</label>
+            <div id="dd_mapType" class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <font id="tv_mapTypeText">矢量</font>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dd_mapType">
+                    <li><a href="#" onclick="onMapTypeChange(this)" data-id="0">矢量</a></li>
+                    <li><a href="#" onclick="onMapTypeChange(this)" data-id="1">影像</a></li>
+                    <li><a href="#" onclick="onMapTypeChange(this)" data-id="2">混合</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <label class="control-label">點選區域</label>
+            <div>
+                <div id="div_createPolygon" class="divInline">
+            		<input type="button" class="btn btn-success" id="newPolygon" value="新多邊形"/>
+            		<input type="button" class="btn btn-danger" id="clearPolygon" value="清除"/>
+                </div>
+                <div id="div_polygonCreating" class="divInline hidden">
+                    <a>左鍵雙擊完成編輯</a>
+            		<input type="button" class="btn btn-danger" id="cancelPolygon" value="取消"/>
+                </div>
+            </div>
+    		<textarea class="form-control" id="latLngStr" rows="20" cols="60"></textarea>
+        </div>
+	</div> 
+	
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ripples.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <!--<script src="js/jquery.dropdown.js"></script>-->
+    <script type="text/javascript" src="http://api.tianditu.com/js/maps.js"></script> 
+    <script src="js/web.js"></script>
+</body> 
+</html>
