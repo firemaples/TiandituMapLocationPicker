@@ -19,6 +19,10 @@ label.control-label {
     display:none;
 }
 
+#div_githubLink{
+    float: right;
+}
+
 /*Map*/
 #mapDiv{
     position:absolute !important;
