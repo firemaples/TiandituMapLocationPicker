@@ -1,4 +1,4 @@
-# TiandituMapLocationPicker
+# TiandituMapPicker
 天地圖中國地區WGS84區域選擇器
 
 
