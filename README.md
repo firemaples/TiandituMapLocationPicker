@@ -4,4 +4,4 @@
 
 **區域選擇器網址:**
 --------
-http://bitly.com/GithubTMPicker
+http://bitly.com/TMPicker
